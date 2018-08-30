@@ -462,30 +462,113 @@ textarea {
 }
 
 /* line 20, ../scss/style.scss */
-header, .presentation {
+header, .presentation, .about .about_container, .services .services_container {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
 }
 /* line 12, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/susy-2.2.14/sass/susy/output/support/_clearfix.scss */
-header:after, .presentation:after {
+header:after, .presentation:after, .about .about_container:after, .services .services_container:after {
   content: " ";
   display: block;
   clear: both;
 }
 
 /* line 23, ../scss/style.scss */
+.about .about_container .head, .services .services_container .head {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 2% 0%;
+  text-align: center;
+  align-content: center;
+}
+/* line 28, ../scss/style.scss */
+.about .about_container .head h1, .services .services_container .head h1,
+.about .about_container .head p,
+.services .services_container .head p {
+  font-family: 'Cairo';
+}
+/* line 32, ../scss/style.scss */
+.about .about_container .head h1, .services .services_container .head h1 {
+  color: #253c97;
+}
+/* line 35, ../scss/style.scss */
+.about .about_container .head p, .services .services_container .head p {
+  color: #1a1a1a;
+  font-weight: bold;
+  margin: 0% auto;
+  margin-top: -1%;
+  width: 50%;
+}
+
+/* line 43, ../scss/style.scss */
+.about .about_container .body, .services .services_container .body1,
+.services .services_container .body2 {
+  padding: 2% 0%;
+}
+/* line 45, ../scss/style.scss */
+.about .about_container .body .Txt, .services .services_container .body1 .Txt,
+.services .services_container .body2 .Txt {
+  display: inline-block;
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  padding-top: 7%;
+}
+/* line 49, ../scss/style.scss */
+.about .about_container .body .Txt h2, .services .services_container .body1 .Txt h2,
+.services .services_container .body2 .Txt h2,
+.about .about_container .body .Txt p,
+.services .services_container .body1 .Txt p,
+.services .services_container .body2 .Txt p {
+  font-family: 'Cairo';
+  text-align: left;
+}
+/* line 54, ../scss/style.scss */
+.about .about_container .body .Txt h2, .services .services_container .body1 .Txt h2,
+.services .services_container .body2 .Txt h2 {
+  color: #253c97;
+}
+/* line 57, ../scss/style.scss */
+.about .about_container .body .Txt p, .services .services_container .body1 .Txt p,
+.services .services_container .body2 .Txt p {
+  color: #1a1a1a;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+}
+/* line 64, ../scss/style.scss */
+.about .about_container .body .Img, .services .services_container .body1 .Img,
+.services .services_container .body2 .Img {
+  display: inline-block;
+  padding-left: 12%;
+  width: 40.67797%;
+  float: left;
+  margin-right: 1.69492%;
+}
+/* line 68, ../scss/style.scss */
+.about .about_container .body .Img img, .services .services_container .body1 .Img img,
+.services .services_container .body2 .Img img {
+  width: 110%;
+  height: 110%;
+}
+
+/* line 76, ../scss/style.scss */
 ul {
   list-style-type: none;
 }
 
-/* line 26, ../scss/style.scss */
+/* line 79, ../scss/style.scss */
 a {
   text-decoration: none;
+  font-family: 'Cairo';
 }
 
-/* line 29, ../scss/style.scss */
-header .register .signup, .presentation .first_view a {
+/* line 83, ../scss/style.scss */
+header .register .signup, .presentation .first_view a, .services .services_container .body1 a,
+.services .services_container .body2 a {
   color: #f2f2f2;
   background: -moz-linear-gradient(142.46% 299.15% 145.78deg, #0029a5 0%, #0332aa 13.48%, #0a4cb8 35.9%, #1675ce 64.31%, #24a5e8 92.71%);
   background: -webkit-linear-gradient(145.78deg, #0029a5 0%, #0332aa 13.48%, #0a4cb8 35.9%, #1675ce 64.31%, #24a5e8 92.71%);
@@ -501,20 +584,20 @@ header .register .signup, .presentation .first_view a {
 }
 
 /** Header **/
-/* line 44, ../scss/style.scss */
+/* line 98, ../scss/style.scss */
 header * {
   display: inline-block;
   font-family: 'Cairo';
 }
 
-/* line 48, ../scss/style.scss */
+/* line 102, ../scss/style.scss */
 header {
   text-align: center;
   align-content: center;
   line-height: 50px;
   vertical-align: middle;
 }
-/* line 54, ../scss/style.scss */
+/* line 108, ../scss/style.scss */
 header h4 {
   color: #253c97;
   font-size: 22px;
@@ -522,7 +605,7 @@ header h4 {
   margin-top: 12px;
 }
 @media (max-width: 576px) {
-  /* line 54, ../scss/style.scss */
+  /* line 108, ../scss/style.scss */
   header h4 {
     display: block;
     width: 100%;
@@ -532,7 +615,7 @@ header h4 {
     margin: 0px;
   }
 }
-/* line 65, ../scss/style.scss */
+/* line 119, ../scss/style.scss */
 header .nav li a,
 header .register li a {
   padding: 0px 15px 0px 15px;
@@ -540,14 +623,14 @@ header .register li a {
   color: #3a58cf;
 }
 @media (max-width: 576px) {
-  /* line 65, ../scss/style.scss */
+  /* line 119, ../scss/style.scss */
   header .nav li a,
   header .register li a {
     color: #f2f2f2;
   }
 }
 @media (max-width: 576px) {
-  /* line 74, ../scss/style.scss */
+  /* line 128, ../scss/style.scss */
   header .nav,
   header .register {
     display: block;
@@ -562,19 +645,23 @@ header .register li a {
     color: #f2f2f2;
   }
 }
-/* line 86, ../scss/style.scss */
+/* line 140, ../scss/style.scss */
 header .register {
   float: right;
 }
 @media (max-width: 576px) {
-  /* line 88, ../scss/style.scss */
+  /* line 142, ../scss/style.scss */
   header .register .signup {
     background: transparent;
   }
 }
 
 /** Presentation **/
-/* line 100, ../scss/style.scss */
+/* line 152, ../scss/style.scss */
+.presentation {
+  padding-bottom: 6%;
+}
+/* line 155, ../scss/style.scss */
 .presentation .first_view {
   display: inline-block;
   padding-top: 5%;
@@ -582,31 +669,31 @@ header .register {
   float: left;
   margin-right: 1.69492%;
 }
-/* line 104, ../scss/style.scss */
+/* line 159, ../scss/style.scss */
 .presentation .first_view h1,
 .presentation .first_view p {
   font-family: 'Cairo';
 }
-/* line 108, ../scss/style.scss */
+/* line 163, ../scss/style.scss */
 .presentation .first_view h1 {
   width: 80%;
   font-size: 40px;
   line-height: 45px;
   color: #253c97;
 }
-/* line 114, ../scss/style.scss */
+/* line 169, ../scss/style.scss */
 .presentation .first_view p {
   font-size: 20px;
   line-height: 30px;
-  color: #3a58cf;
+  color: #1a1a1a;
   padding-bottom: 5%;
 }
-/* line 120, ../scss/style.scss */
+/* line 175, ../scss/style.scss */
 .presentation .first_view a {
-  padding: 15px;
+  padding: 12px;
 }
 @media (max-width: 576px) {
-  /* line 100, ../scss/style.scss */
+  /* line 155, ../scss/style.scss */
   .presentation .first_view {
     padding: 2%;
     display: block;
@@ -616,7 +703,7 @@ header .register {
     margin-right: 0;
   }
 }
-/* line 130, ../scss/style.scss */
+/* line 185, ../scss/style.scss */
 .presentation .photo {
   display: inline-block;
   padding-left: 16%;
@@ -625,20 +712,20 @@ header .register {
   float: left;
   margin-right: 1.69492%;
 }
-/* line 135, ../scss/style.scss */
+/* line 190, ../scss/style.scss */
 .presentation .photo img {
   width: 120%;
   height: 120%;
 }
 @media (max-width: 576px) {
-  /* line 135, ../scss/style.scss */
+  /* line 190, ../scss/style.scss */
   .presentation .photo img {
     width: 100%;
     height: 100%;
   }
 }
 @media (max-width: 576px) {
-  /* line 130, ../scss/style.scss */
+  /* line 185, ../scss/style.scss */
   .presentation .photo {
     display: block;
     padding-left: 0%;
@@ -648,4 +735,74 @@ header .register {
     margin-left: 0;
     margin-right: 0;
   }
+}
+
+/** About **/
+/* line 208, ../scss/style.scss */
+.about {
+  background: #F7F5F5;
+  background: #f7f5f5;
+  background-image: url(/images/about_dec.png);
+  background-repeat: no-repeat;
+  background-position-x: -30%;
+  background-position-y: 10%;
+  padding-bottom: 8%;
+}
+
+/** Services **/
+/* line 228, ../scss/style.scss */
+.services {
+  margin-top: -2%;
+}
+/* line 235, ../scss/style.scss */
+.services .services_container .body1,
+.services .services_container .body2 {
+  text-align: center;
+}
+/* line 239, ../scss/style.scss */
+.services .services_container .body1 .Txt h2,
+.services .services_container .body1 .Txt p,
+.services .services_container .body2 .Txt h2,
+.services .services_container .body2 .Txt p {
+  text-align: center;
+}
+/* line 243, ../scss/style.scss */
+.services .services_container .body1 .Img,
+.services .services_container .body2 .Img {
+  padding-top: 5%;
+}
+/* line 246, ../scss/style.scss */
+.services .services_container .body1 a,
+.services .services_container .body2 a {
+  padding: 6px 12px;
+}
+/* line 252, ../scss/style.scss */
+.services .services_container .body1 .Txt {
+  padding-top: 8%;
+}
+/* line 254, ../scss/style.scss */
+.services .services_container .body1 .Txt p {
+  width: 70%;
+  margin: 0% auto;
+  padding-bottom: 4%;
+}
+/* line 262, ../scss/style.scss */
+.services .services_container .body2 .Img {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  padding: 3% 12% 2% 10%;
+}
+/* line 266, ../scss/style.scss */
+.services .services_container .body2 .Txt {
+  margin-left: 6%;
+  padding: 10% 0% 0% 5%;
+  width: 40.67797%;
+  float: left;
+  margin-right: 1.69492%;
+}
+/* line 270, ../scss/style.scss */
+.services .services_container .body2 .Txt p {
+  margin: 0% auto;
+  padding-bottom: 3%;
 }
