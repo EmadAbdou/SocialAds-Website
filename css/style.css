@@ -462,20 +462,20 @@ textarea {
 }
 
 /* line 20, ../scss/style.scss */
-header, .presentation, .about .about_container, .services .services_container {
+header, .presentation, .about .about_container, .services .services_container, .contact .contact_container, footer {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
 }
 /* line 12, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/susy-2.2.14/sass/susy/output/support/_clearfix.scss */
-header:after, .presentation:after, .about .about_container:after, .services .services_container:after {
+header:after, .presentation:after, .about .about_container:after, .services .services_container:after, .contact .contact_container:after, footer:after {
   content: " ";
   display: block;
   clear: both;
 }
 
 /* line 23, ../scss/style.scss */
-.about .about_container .head, .services .services_container .head {
+.about .about_container .head, .services .services_container .head, .contact .contact_container .head {
   width: 100%;
   float: left;
   margin-left: 0;
@@ -485,17 +485,18 @@ header:after, .presentation:after, .about .about_container:after, .services .ser
   align-content: center;
 }
 /* line 28, ../scss/style.scss */
-.about .about_container .head h1, .services .services_container .head h1,
+.about .about_container .head h1, .services .services_container .head h1, .contact .contact_container .head h1,
 .about .about_container .head p,
-.services .services_container .head p {
+.services .services_container .head p,
+.contact .contact_container .head p {
   font-family: 'Cairo';
 }
 /* line 32, ../scss/style.scss */
-.about .about_container .head h1, .services .services_container .head h1 {
+.about .about_container .head h1, .services .services_container .head h1, .contact .contact_container .head h1 {
   color: #253c97;
 }
 /* line 35, ../scss/style.scss */
-.about .about_container .head p, .services .services_container .head p {
+.about .about_container .head p, .services .services_container .head p, .contact .contact_container .head p {
   color: #1a1a1a;
   font-weight: bold;
   margin: 0% auto;
@@ -504,19 +505,19 @@ header:after, .presentation:after, .about .about_container:after, .services .ser
 }
 @media (max-width: 576px) {
   /* line 35, ../scss/style.scss */
-  .about .about_container .head p, .services .services_container .head p {
+  .about .about_container .head p, .services .services_container .head p, .contact .contact_container .head p {
     width: 100%;
   }
 }
 
 /* line 46, ../scss/style.scss */
 .about .about_container .body, .services .services_container .body1,
-.services .services_container .body2 {
+.services .services_container .body2, .contact .contact_container .body {
   padding: 2% 0%;
 }
 /* line 48, ../scss/style.scss */
 .about .about_container .body .Txt, .services .services_container .body1 .Txt,
-.services .services_container .body2 .Txt {
+.services .services_container .body2 .Txt, .contact .contact_container .body .Txt {
   display: inline-block;
   width: 49.15254%;
   float: left;
@@ -525,21 +526,22 @@ header:after, .presentation:after, .about .about_container:after, .services .ser
 }
 /* line 52, ../scss/style.scss */
 .about .about_container .body .Txt h2, .services .services_container .body1 .Txt h2,
-.services .services_container .body2 .Txt h2,
+.services .services_container .body2 .Txt h2, .contact .contact_container .body .Txt h2,
 .about .about_container .body .Txt p,
 .services .services_container .body1 .Txt p,
-.services .services_container .body2 .Txt p {
+.services .services_container .body2 .Txt p,
+.contact .contact_container .body .Txt p {
   font-family: 'Cairo';
   text-align: left;
 }
 /* line 57, ../scss/style.scss */
 .about .about_container .body .Txt h2, .services .services_container .body1 .Txt h2,
-.services .services_container .body2 .Txt h2 {
+.services .services_container .body2 .Txt h2, .contact .contact_container .body .Txt h2 {
   color: #253c97;
 }
 /* line 60, ../scss/style.scss */
 .about .about_container .body .Txt p, .services .services_container .body1 .Txt p,
-.services .services_container .body2 .Txt p {
+.services .services_container .body2 .Txt p, .contact .contact_container .body .Txt p {
   color: #1a1a1a;
   font-size: 18px;
   line-height: 22px;
@@ -547,7 +549,7 @@ header:after, .presentation:after, .about .about_container:after, .services .ser
 }
 /* line 67, ../scss/style.scss */
 .about .about_container .body .Img, .services .services_container .body1 .Img,
-.services .services_container .body2 .Img {
+.services .services_container .body2 .Img, .contact .contact_container .body .Img {
   display: inline-block;
   padding-left: 12%;
   width: 40.67797%;
@@ -556,7 +558,7 @@ header:after, .presentation:after, .about .about_container:after, .services .ser
 }
 /* line 71, ../scss/style.scss */
 .about .about_container .body .Img img, .services .services_container .body1 .Img img,
-.services .services_container .body2 .Img img {
+.services .services_container .body2 .Img img, .contact .contact_container .body .Img img {
   width: 110%;
   height: 110%;
 }
@@ -574,7 +576,7 @@ a {
 
 /* line 86, ../scss/style.scss */
 header .register .signup, .presentation .first_view a, .services .services_container .body1 a,
-.services .services_container .body2 a {
+.services .services_container .body2 a, .contact .contact_container .body form .btn {
   color: #f2f2f2;
   background: -moz-linear-gradient(142.46% 299.15% 145.78deg, #0029a5 0%, #0332aa 13.48%, #0a4cb8 35.9%, #1675ce 64.31%, #24a5e8 92.71%);
   background: -webkit-linear-gradient(145.78deg, #0029a5 0%, #0332aa 13.48%, #0a4cb8 35.9%, #1675ce 64.31%, #24a5e8 92.71%);
@@ -663,8 +665,13 @@ header .register li a {
     color: #f2f2f2;
   }
 }
+/* line 141, ../scss/style.scss */
+header .nav li a:hover,
+header .register li a:hover {
+  color: #778cde;
+}
 @media (max-width: 768px) {
-  /* line 142, ../scss/style.scss */
+  /* line 145, ../scss/style.scss */
   header .nav,
   header .register {
     width: 40.67797%;
@@ -675,7 +682,7 @@ header .register li a {
   }
 }
 @media (max-width: 576px) {
-  /* line 142, ../scss/style.scss */
+  /* line 145, ../scss/style.scss */
   header .nav,
   header .register {
     display: block;
@@ -690,29 +697,29 @@ header .register li a {
     color: #f2f2f2;
   }
 }
-/* line 159, ../scss/style.scss */
+/* line 162, ../scss/style.scss */
 header .register {
   float: right;
 }
 @media (max-width: 576px) {
-  /* line 161, ../scss/style.scss */
+  /* line 164, ../scss/style.scss */
   header .register .signup {
     background: transparent;
   }
 }
 
 /** Presentation **/
-/* line 171, ../scss/style.scss */
+/* line 174, ../scss/style.scss */
 .presentation {
   padding-bottom: 6%;
 }
 @media (max-width: 768px) {
-  /* line 171, ../scss/style.scss */
+  /* line 174, ../scss/style.scss */
   .presentation {
     padding: 0% 2% 7% 3%;
   }
 }
-/* line 177, ../scss/style.scss */
+/* line 180, ../scss/style.scss */
 .presentation .first_view {
   display: inline-block;
   padding-top: 5%;
@@ -721,7 +728,7 @@ header .register {
   margin-right: 1.69492%;
 }
 @media (max-width: 768px) {
-  /* line 177, ../scss/style.scss */
+  /* line 180, ../scss/style.scss */
   .presentation .first_view {
     width: 57.62712%;
     float: left;
@@ -731,7 +738,7 @@ header .register {
   }
 }
 @media (max-width: 576px) {
-  /* line 177, ../scss/style.scss */
+  /* line 180, ../scss/style.scss */
   .presentation .first_view {
     padding: 1%;
     display: block;
@@ -741,12 +748,12 @@ header .register {
     margin-right: 0;
   }
 }
-/* line 191, ../scss/style.scss */
+/* line 194, ../scss/style.scss */
 .presentation .first_view h1,
 .presentation .first_view p {
   font-family: 'Cairo';
 }
-/* line 195, ../scss/style.scss */
+/* line 198, ../scss/style.scss */
 .presentation .first_view h1 {
   width: 80%;
   font-size: 40px;
@@ -754,12 +761,12 @@ header .register {
   color: #253c97;
 }
 @media (max-width: 768px) {
-  /* line 195, ../scss/style.scss */
+  /* line 198, ../scss/style.scss */
   .presentation .first_view h1 {
     font-size: 30px;
   }
 }
-/* line 204, ../scss/style.scss */
+/* line 207, ../scss/style.scss */
 .presentation .first_view p {
   font-size: 20px;
   line-height: 30px;
@@ -767,16 +774,16 @@ header .register {
   padding-bottom: 5%;
 }
 @media (max-width: 768px) {
-  /* line 204, ../scss/style.scss */
+  /* line 207, ../scss/style.scss */
   .presentation .first_view p {
     font-size: 15px;
   }
 }
-/* line 213, ../scss/style.scss */
+/* line 216, ../scss/style.scss */
 .presentation .first_view a {
   padding: 12px;
 }
-/* line 218, ../scss/style.scss */
+/* line 221, ../scss/style.scss */
 .presentation .photo {
   display: inline-block;
   padding-left: 16%;
@@ -786,7 +793,7 @@ header .register {
   margin-right: 1.69492%;
 }
 @media (max-width: 768px) {
-  /* line 218, ../scss/style.scss */
+  /* line 221, ../scss/style.scss */
   .presentation .photo {
     width: 40.67797%;
     float: left;
@@ -796,7 +803,7 @@ header .register {
   }
 }
 @media (max-width: 576px) {
-  /* line 218, ../scss/style.scss */
+  /* line 221, ../scss/style.scss */
   .presentation .photo {
     display: block;
     padding-left: 0%;
@@ -807,13 +814,13 @@ header .register {
     margin-right: 0;
   }
 }
-/* line 234, ../scss/style.scss */
+/* line 237, ../scss/style.scss */
 .presentation .photo img {
   width: 120%;
   height: 120%;
 }
 @media (max-width: 576px) {
-  /* line 234, ../scss/style.scss */
+  /* line 237, ../scss/style.scss */
   .presentation .photo img {
     width: 100%;
     height: 100%;
@@ -821,9 +828,8 @@ header .register {
 }
 
 /** About **/
-/* line 246, ../scss/style.scss */
+/* line 249, ../scss/style.scss */
 .about {
-  background: #F7F5F5;
   background: #f7f5f5;
   background-image: url(/images/about_dec.png);
   background-repeat: no-repeat;
@@ -832,7 +838,7 @@ header .register {
   padding-bottom: 8%;
 }
 @media (max-width: 768px) {
-  /* line 246, ../scss/style.scss */
+  /* line 249, ../scss/style.scss */
   .about {
     padding: 0% 2% 7% 3%;
     background-position-x: -93%;
@@ -840,14 +846,14 @@ header .register {
   }
 }
 @media (max-width: 576px) {
-  /* line 246, ../scss/style.scss */
+  /* line 249, ../scss/style.scss */
   .about {
     background-image: none;
     padding: 0% 1% 7% 1%;
   }
 }
 @media (max-width: 576px) {
-  /* line 271, ../scss/style.scss */
+  /* line 273, ../scss/style.scss */
   .about .about_container .body .Txt {
     width: 100%;
     float: left;
@@ -857,7 +863,7 @@ header .register {
   }
 }
 @media (max-width: 768px) {
-  /* line 277, ../scss/style.scss */
+  /* line 279, ../scss/style.scss */
   .about .about_container .body .Img {
     width: 40.67797%;
     float: left;
@@ -867,7 +873,7 @@ header .register {
   }
 }
 @media (max-width: 576px) {
-  /* line 277, ../scss/style.scss */
+  /* line 279, ../scss/style.scss */
   .about .about_container .body .Img {
     width: 100%;
     float: left;
@@ -877,45 +883,62 @@ header .register {
   }
 }
 @media (max-width: 576px) {
-  /* line 287, ../scss/style.scss */
+  /* line 289, ../scss/style.scss */
   .about .about_container .body .Img img {
     width: 100%;
   }
 }
 
 /** Services **/
-/* line 298, ../scss/style.scss */
+/* line 300, ../scss/style.scss */
 .services {
-  margin-top: -2%;
+  background-image: url(/images/service_dec.png);
+  background-repeat: no-repeat;
+  background-position-x: 140%;
+  background-position-y: -4%;
+  padding-bottom: 8%;
 }
-/* line 305, ../scss/style.scss */
+@media (max-width: 768px) {
+  /* line 300, ../scss/style.scss */
+  .services {
+    background-position-x: 225%;
+    background-position-y: -7%;
+  }
+}
+@media (max-width: 576px) {
+  /* line 300, ../scss/style.scss */
+  .services {
+    background-image: none;
+  }
+}
+/* line 318, ../scss/style.scss */
 .services .services_container .body1,
 .services .services_container .body2 {
   text-align: center;
 }
-/* line 309, ../scss/style.scss */
+/* line 322, ../scss/style.scss */
 .services .services_container .body1 .Txt h2,
 .services .services_container .body1 .Txt p,
 .services .services_container .body2 .Txt h2,
 .services .services_container .body2 .Txt p {
   text-align: center;
 }
-/* line 313, ../scss/style.scss */
+/* line 326, ../scss/style.scss */
 .services .services_container .body1 .Img,
 .services .services_container .body2 .Img {
   padding-top: 5%;
 }
-/* line 316, ../scss/style.scss */
+/* line 329, ../scss/style.scss */
 .services .services_container .body1 a,
 .services .services_container .body2 a {
   padding: 6px 12px;
 }
-/* line 322, ../scss/style.scss */
+/* line 335, ../scss/style.scss */
 .services .services_container .body1 .Txt {
   padding-top: 8%;
 }
 @media (max-width: 576px) {
-  /* line 322, ../scss/style.scss */
+  /* line 335, ../scss/style.scss */
   .services .services_container .body1 .Txt {
     width: 100%;
     float: left;
@@ -924,20 +947,20 @@ header .register {
     margin: 0%;
   }
 }
-/* line 328, ../scss/style.scss */
+/* line 341, ../scss/style.scss */
 .services .services_container .body1 .Txt p {
   width: 70%;
   margin: 0% auto;
   padding-bottom: 4%;
 }
 @media (max-width: 768px) {
-  /* line 334, ../scss/style.scss */
+  /* line 347, ../scss/style.scss */
   .services .services_container .body1 .Img {
     padding-top: 13%;
   }
 }
 @media (max-width: 576px) {
-  /* line 334, ../scss/style.scss */
+  /* line 347, ../scss/style.scss */
   .services .services_container .body1 .Img {
     width: 100%;
     float: left;
@@ -948,12 +971,12 @@ header .register {
   }
 }
 @media (max-width: 768px) {
-  /* line 343, ../scss/style.scss */
+  /* line 356, ../scss/style.scss */
   .services .services_container .body1 .Img img {
     width: 120%;
   }
 }
-/* line 351, ../scss/style.scss */
+/* line 364, ../scss/style.scss */
 .services .services_container .body2 .Img {
   width: 49.15254%;
   float: left;
@@ -961,13 +984,13 @@ header .register {
   padding: 3% 12% 2% 10%;
 }
 @media (max-width: 768px) {
-  /* line 351, ../scss/style.scss */
+  /* line 364, ../scss/style.scss */
   .services .services_container .body2 .Img {
     padding: 13% 8% 2% 10%;
   }
 }
 @media (max-width: 576px) {
-  /* line 351, ../scss/style.scss */
+  /* line 364, ../scss/style.scss */
   .services .services_container .body2 .Img {
     width: 100%;
     float: left;
@@ -977,7 +1000,7 @@ header .register {
     padding: 5% 20% 0% 17%;
   }
 }
-/* line 363, ../scss/style.scss */
+/* line 376, ../scss/style.scss */
 .services .services_container .body2 .Txt {
   margin-left: 6%;
   padding: 10% 0% 0% 5%;
@@ -986,7 +1009,7 @@ header .register {
   margin-right: 1.69492%;
 }
 @media (max-width: 576px) {
-  /* line 363, ../scss/style.scss */
+  /* line 376, ../scss/style.scss */
   .services .services_container .body2 .Txt {
     width: 100%;
     float: left;
@@ -996,14 +1019,236 @@ header .register {
     padding: 0%;
   }
 }
-/* line 372, ../scss/style.scss */
+/* line 385, ../scss/style.scss */
 .services .services_container .body2 .Txt p {
   margin: 0% auto;
   padding-bottom: 4%;
 }
 @media (max-width: 576px) {
-  /* line 372, ../scss/style.scss */
+  /* line 385, ../scss/style.scss */
   .services .services_container .body2 .Txt p {
     width: 76%;
+  }
+}
+
+/** Contact **/
+/* line 398, ../scss/style.scss */
+.contact {
+  background: #f7f5f5;
+  background-image: url(/images/contact_dec.png);
+  background-repeat: no-repeat;
+  background-position-x: -50%;
+  background-position-y: 10%;
+  padding-bottom: 5%;
+}
+@media (max-width: 768px) {
+  /* line 398, ../scss/style.scss */
+  .contact {
+    background-position-x: -231%;
+    background-position-y: 6%;
+  }
+}
+@media (max-width: 576px) {
+  /* line 398, ../scss/style.scss */
+  .contact {
+    background-image: none;
+  }
+}
+/* line 414, ../scss/style.scss */
+.contact .contact_container .head {
+  padding: 2% 0% 5% 0% !important;
+}
+/* line 420, ../scss/style.scss */
+.contact .contact_container .body form {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  margin: 0%;
+  padding: 0% 0% 0% 7%;
+  display: inline-block;
+}
+@media (max-width: 576px) {
+  /* line 420, ../scss/style.scss */
+  .contact .contact_container .body form {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 3% 0% 4% 7%;
+  }
+}
+/* line 429, ../scss/style.scss */
+.contact .contact_container .body form .name,
+.contact .contact_container .body form .email,
+.contact .contact_container .body form .message {
+  display: block;
+  padding-bottom: 20px;
+}
+/* line 434, ../scss/style.scss */
+.contact .contact_container .body form .name input,
+.contact .contact_container .body form .email input,
+.contact .contact_container .body form .message input {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #253c97;
+  background-color: transparent;
+}
+/* line 440, ../scss/style.scss */
+.contact .contact_container .body form .name input::placeholder,
+.contact .contact_container .body form .email input::placeholder,
+.contact .contact_container .body form .message input::placeholder {
+  color: #253c97;
+  position: relative;
+  margin: 0% auto;
+  font-family: 'Cairo';
+}
+/* line 447, ../scss/style.scss */
+.contact .contact_container .body form .name img,
+.contact .contact_container .body form .email img,
+.contact .contact_container .body form .message img {
+  width: 3%;
+  position: relative;
+  top: 2px;
+}
+/* line 453, ../scss/style.scss */
+.contact .contact_container .body form .message {
+  padding-top: 10px;
+}
+/* line 455, ../scss/style.scss */
+.contact .contact_container .body form .message .labelPart {
+  display: block;
+  padding-bottom: 10px;
+}
+/* line 458, ../scss/style.scss */
+.contact .contact_container .body form .message .labelPart label {
+  font-family: 'Cairo';
+  color: #606ea7a1;
+  padding-left: 11px;
+}
+/* line 464, ../scss/style.scss */
+.contact .contact_container .body form .message textarea {
+  resize: none;
+  background-color: transparent;
+  width: 74%;
+  border: 1px solid #253c97;
+  padding: 5px;
+}
+/* line 472, ../scss/style.scss */
+.contact .contact_container .body form .btn {
+  border: 0;
+  padding: 10px 30px;
+  margin-top: 3px;
+}
+/* line 479, ../scss/style.scss */
+.contact .contact_container .body .Img {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  margin: 0%;
+  padding: 4% 0% 0% 9%;
+}
+@media (max-width: 768px) {
+  /* line 479, ../scss/style.scss */
+  .contact .contact_container .body .Img {
+    padding: 6% 5% 0% 0%;
+  }
+}
+@media (max-width: 576px) {
+  /* line 479, ../scss/style.scss */
+  .contact .contact_container .body .Img {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 3% 14% 0% 11%;
+  }
+}
+/* line 490, ../scss/style.scss */
+.contact .contact_container .body .Img img {
+  width: 75%;
+}
+@media (max-width: 768px) {
+  /* line 490, ../scss/style.scss */
+  .contact .contact_container .body .Img img {
+    width: 100%;
+  }
+}
+
+/** Footer **/
+/* line 502, ../scss/style.scss */
+footer {
+  padding: 1% 0%;
+}
+/* line 505, ../scss/style.scss */
+footer p {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  margin: 0;
+  padding: 0%;
+  font-family: 'Cairo';
+  font-weight: bold;
+}
+/* line 511, ../scss/style.scss */
+footer p span {
+  color: #253c97;
+}
+@media (max-width: 768px) {
+  /* line 505, ../scss/style.scss */
+  footer p {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  /* line 505, ../scss/style.scss */
+  footer p {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+}
+/* line 523, ../scss/style.scss */
+footer ul {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  margin: 0;
+  padding: 0% 0% 0% 27%;
+}
+/* line 527, ../scss/style.scss */
+footer ul li {
+  display: inline-block;
+}
+/* line 530, ../scss/style.scss */
+footer ul li a img {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  /* line 523, ../scss/style.scss */
+  footer ul {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    padding: 1% 0% 0% 0%;
+  }
+}
+@media (max-width: 576px) {
+  /* line 523, ../scss/style.scss */
+  footer ul {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    padding: 1% 0% 0% 0%;
   }
 }
